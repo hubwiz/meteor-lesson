@@ -8,7 +8,7 @@
 下载到本地后，进入示例子目录运行。例如
 
     ~/demos$ cd frp
-   ~/demos/frp$ meteor
+    ~/demos/frp$ meteor
 
 运行之前请确保你已经正确安装了Meteor。
   
