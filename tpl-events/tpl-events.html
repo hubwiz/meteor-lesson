@@ -1,0 +1,9 @@
+<body>
+  {{! 为子模板声明数据上下文}}
+  {{> hello name="John" tel="114"}}
+</body>
+
+<template name="hello">
+  <input type="text" placeholder="请输入消息内容...">
+  <button>发送消息</button>
+</template>

@@ -1,0 +1,23 @@
+<body>
+  {{> updater}}
+  {{> persons}}
+</body>
+
+<template name="updater">
+  <span>{{id}}</span>
+  <button id="inc">inc age</button>
+  <button id="dec">dec age</button>
+</template>
+
+<template name="persons">
+  <table>
+    <thead>
+      <tr><td>id</td><td>name</td><td>age</td></tr>
+    </thead>
+    <tbody>
+      {{#each persons}}
+      <tr><td><a href="{{_id}}">{{_id}}</a></td><td>{{name}}</td><td>{{age}}</td></tr>
+      {{/each}} 
+    </tbody>
+  </table>
+</template>

@@ -1,0 +1,8 @@
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{! 模板标签中路径的第一个标识符被视为helper }}
+  <h1>Hello,{{who.name}},you're alreayd {{who.age}} years old!</h1>
+</template>

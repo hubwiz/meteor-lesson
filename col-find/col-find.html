@@ -1,0 +1,22 @@
+<body>
+  {{> criteria}}
+  {{> persons}}
+</body>
+
+<template name="criteria">
+  <input type="text" placeholder="name">
+  <button>find</button>  
+</template>
+
+<template name="persons">
+  <table>
+    <thead>
+      <tr><td>name</td><td>age</td><td>city</td><td>gender</td></tr>
+    </thead>
+    <tbody>
+      {{#each persons}}
+      <tr><td>{{name}}</td><td>{{age}}</td><td>{{city}}</td><td>{{gender}}</td></tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

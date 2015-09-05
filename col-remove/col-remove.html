@@ -1,0 +1,16 @@
+<body>
+  {{> friends}}
+</body>
+
+<template name="friends"> 
+  <table>
+    <thead>
+      <tr><td>name</td><td>operation</td></tr>
+    </thead>
+    <tbody>
+      {{#each friends}}
+      <tr><td>{{name}}</td><td><button>remove</button></td></tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

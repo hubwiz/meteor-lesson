@@ -1,0 +1,18 @@
+<body>
+  {{! 在调用子模板时，使用关键字参数声明数据上下文 }}
+  {{> hello name="John" age=27}}
+
+  <p>你的期末考试成绩如下:</p>
+
+  {{! 使用with模板标签声明当前模板中的数据上下文 }}
+  {{#with math=99 fineart=89}}
+  <ul>
+    <li>math:{{math}}</li>
+    <li>finart:{{fineart}}</li>
+  </ul>
+  {{/with}}
+</body>
+
+<template name="hello">
+  <h1>Hello,{{name}}, 你已经{{age}}岁了!</h1>
+</template>

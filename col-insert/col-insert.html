@@ -1,0 +1,19 @@
+<body>
+  {{> sender}}
+  {{> messages}}
+</body>
+
+<template name="sender">
+  <form>
+    <input type="text" placeholder="message text">
+    <input type="submit" value="send">
+  </form>
+</template>
+
+<template name="messages">
+  <div>
+    {{#each messages}}
+      <span>{{text}}</span>{{time}}<br>
+    {{/each}}
+  </div>
+</template>

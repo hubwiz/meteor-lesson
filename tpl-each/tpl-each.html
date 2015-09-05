@@ -1,0 +1,11 @@
+<body>
+  {{> list}}
+</body>
+
+<template name="list">
+  <ul>
+    {{#each friends}}
+    <li>{{name}}</li>
+    {{/each}}
+  </ul>
+</template>

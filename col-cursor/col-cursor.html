@@ -1,0 +1,31 @@
+<body>
+  {{> tpl_foreach}}
+  {{> tpl_map}}
+  {{> tpl_fetch}}
+  {{> tpl_count}}
+</body>
+
+<template name="tpl_foreach">
+  <ul id="foreach">
+  </ul>  
+</template>
+
+<template name="tpl_map">
+  <ul>
+    {{#each titles}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="tpl_fetch">
+  <ul>
+    {{#each news}}
+    <li>{{title}} from {{source}} time:{{time}}</li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="tpl_count">
+  <p>total count of news: {{count}}</p>
+</template>

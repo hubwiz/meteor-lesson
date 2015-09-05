@@ -1,0 +1,24 @@
+<body>
+  {{> navi}}
+  {{> Template.dynamic template=tplname}}
+</body>
+
+<template name="navi">
+  <ul>
+    {{#each links}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="blogs">
+  <h1>BLOGS</h1>
+</template>
+
+<template name="musics">
+  <h1>MUSICS</h1>
+</template>
+
+<template name="sports">
+  <h1>SPORTS</h1>
+</template>

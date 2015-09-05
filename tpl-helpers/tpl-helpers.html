@@ -1,0 +1,16 @@
+<body>
+  {{! 在调用子模板时，使用当前模板中的helper设置子模板的数据上下文}}
+  {{> hello getProfile}}
+
+  <p>你的期末考试成绩如下：</p>
+
+  {{! 使用当前模板的helper，解析当前模板中的模板标签}}
+  <ul>
+    <li>数学 ： {{mathScore}}</li>
+    <li>美术 ： {{fineartScore}}</li>
+  </ul>
+</body>
+
+<template name="hello">
+  <h1>Hello {{name}}, 你已经{{age}}岁了！</h1>
+</template>
